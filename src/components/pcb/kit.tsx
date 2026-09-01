@@ -101,8 +101,8 @@ export function Card({
   onClick,
 }: {
   children: ReactNode;
-  className?: string;
-  onClick?: () => void;
+  className?: string | undefined;
+  onClick?: (() => void) | undefined;
 }) {
   const Tag = onClick ? "button" : "div";
   return (
